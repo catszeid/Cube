@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset='utf-8'>
+	<title>Cube</title>
+	<script src="three.js"></script>
+	<script src="cube.js"></script>
+	<link rel="stylesheet" type="text/css" href="cube.css">
+</head>
+<body class="center">
+	<header class="float">
+		<h1>Cube</h1>
+		<p>Powered by Three.js</p>
+		<p>Use W and S to zoom in and out on the cube</p>
+	</header>
+	<div id="options" class="box float center">
+		<form>
+			<input id="start" type="button" value="Stop"><br />
+			X Rotation: <input id="xRotation" type="number" value="0.01" min="-1" max="1" step="0.01"><br />
+			Y Rotation: <input id="yRotation" type="number" value="0.01" min="-1" max="1" step="0.01"><br />
+			Z Rotation: <input id="zRotation" type="number" value="0" min="-1" max="1" step="0.01"><br />
+			BW:<input id="blackWhite" type="checkbox" value="BW">
+			Filled:<input id="colored" type="checkbox" value="Colored?" checked>			
+			Cube Color: <input id="cubeColor" type="color" value="#00ff00">
+		</form>
+	</div>
+	<div id="output" class="box float center">
+		<table>
+			<tr><th>X</th><th>Y</th><th>Z</th></tr>
+			<tr><td id="v1x"></td><td id="v1y"></td><td id="v1z"></td></tr>
+			<tr><td id="v2x"></td><td id="v2y"></td><td id="v2z"></td></tr>
+			<tr><td id="v3x"></td><td id="v3y"></td><td id="v3z"></td></tr>
+			<tr><td id="v4x"></td><td id="v4y"></td><td id="v4z"></td></tr>
+			<tr><td id="v5x"></td><td id="v5y"></td><td id="v5z"></td></tr>
+			<tr><td id="v6x"></td><td id="v6y"></td><td id="v6z"></td></tr>
+			<tr><td id="v7x"></td><td id="v7y"></td><td id="v7z"></td></tr>
+			<tr><td id="v8x"></td><td id="v8y"></td><td id="v8z"></td></tr>
+		</table>
+	</div>
+</body>
